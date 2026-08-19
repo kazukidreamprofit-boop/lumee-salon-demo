@@ -1,0 +1,53 @@
+# LUMÉE EYE SALON - 編集ガイド
+
+このフォルダは、そのまま静的サイトとして公開できる構成です。
+
+## いちばん簡単な修正方法
+
+まず `site-config.js` を開いてください。
+店名、トップ文章、住所、電話、営業時間、予約先URL、メニュー料金、口コミ、FAQは、ほぼここだけで変更できます。
+
+### よく触る場所
+- 店名: `brand.name`
+- トップ見出し: `hero.title`
+- 電話・住所: `shop`
+- 予約先: `links.booking`
+- LINE: `links.line`
+- メニュー料金: `menus`
+- 口コミ: `reviews`
+- FAQ: `faq`
+
+## 画像の変更
+`assets` フォルダ内の画像を同じファイル名で置き換えるだけです。
+
+- `hero-eyelash.jpg` : トップのまつげ写真
+- `salon-interior.jpg` : コンセプト部分の店内写真
+- `staff-placeholder.jpg` : スタッフ写真
+- `gallery-1.jpg` ～ `gallery-6.jpg` : デザイン例
+
+同じファイル名にすれば HTML/CSS は触らなくてOKです。
+
+## 色・デザイン変更
+`styles.css` の一番上にある `:root` の色を変えます。
+`--gold` がメインアクセント、`--bg` が背景、`--ink` が文字色です。
+
+## 公開前に必ず差し替えるもの
+1. 架空の住所・電話番号・メール
+2. 架空の口コミ
+3. スタッフ名・資格・写真
+4. メニュー料金
+5. Google Maps
+6. 予約URL / LINE URL
+7. プライバシーポリシー
+8. キャンセルポリシー
+9. sitemap.xml のドメイン
+
+## 予約について
+このデモのフォームはメールアプリを開く方式です。
+実店舗では、店舗がすでに利用している予約サービスへ `links.booking` をつなぐ方が運用が簡単です。
+
+## おすすめの運用
+GitHubにこのフォルダを保存し、Cloudflare Pagesと接続します。
+以後はGitHub上で `site-config.js` を編集して保存するだけで、自動的に再公開される形にできます。
+
+※公開方法は `DEPLOY_CLOUDFLARE.md` を参照してください。
