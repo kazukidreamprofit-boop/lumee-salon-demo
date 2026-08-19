@@ -28,7 +28,7 @@ window.SITE_CONFIG = {
     payment: "現金 / Visa / Mastercard / JCB / 交通系IC"
   },
   links: {
-    booking: "#reserve",
+    booking: "https://beauty.hotpepper.jp/kr/slnH000564955/?cstt=11",
     line: "#reserve",
     instagram: "#",
     map: "#access"
