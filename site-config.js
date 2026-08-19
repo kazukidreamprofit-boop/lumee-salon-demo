@@ -21,8 +21,8 @@ window.SITE_CONFIG = {
     station: "JR恵比寿駅 西口より徒歩3分",
     hours: "10:00〜20:00（最終受付18:30）",
     closed: "火曜日",
-    phone: "03-0000-0000",
-    phoneRaw: "0300000000",
+    phone: "03-4164-7777",
+    phoneRaw: "0341647777",
     email: "info@lumee-eye.example",
     instagram: "@lumee_eye_demo",
     payment: "現金 / Visa / Mastercard / JCB / 交通系IC"
